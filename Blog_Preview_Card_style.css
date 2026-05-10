@@ -1,0 +1,105 @@
+/* Ana fontu tanıtalım */
+@font-face {
+    font-family: 'Figtree'; 
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 800; /* Bu fontun tüm kalınlıklarını kullanabiliriz demek */
+    font-style: normal;
+}
+
+/* İtalik (eğik) versiyonunu tanıtalım */
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 800;
+    font-style: italic;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Figtree';
+    font-weight: 500;
+    min-height: 100vh;
+    background-color: hsla(47, 88%, 63%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid  hsl(0, 0%, 7%);
+    box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
+    border-radius: 20px;
+    max-width: 380px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom:20px;
+    padding:25px;
+}
+
+h2{
+    font-weight: 800;
+    cursor: pointer;
+}
+h2:hover {
+    color: hsla(47, 88%, 63%);
+}
+.learning{
+    font-weight: 800;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: hsla(47, 88%, 63%);
+}
+
+.card-designer{
+    margin-top:30px;
+}
+
+.image{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.text-colour{
+    color: hsl(0, 0%, 42%);
+    font-size: 16px; 
+    line-height: 1.5em;
+}
+
+.author-name {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.author-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.author-box img {
+    width: 32px;
+}
+
+
+@media screen and (max-width: 375px){
+    body{
+        padding: 0 20px;
+    }
+
+    .card{
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
